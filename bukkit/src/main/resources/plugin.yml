@@ -1,0 +1,24 @@
+name: FuckName
+version: ${project.version}
+main: cn.puehmc.fuckName.bukkit.FuckNameBukkit
+api-version: 1.19
+folia-supported: true
+author: PuehMC
+description: A plugin to filter player names
+website: https://github.com/puehmc/FuckName
+
+commands:
+  fuckname:
+    description: FuckName plugin commands
+    usage: /fuckname <reload>
+    aliases: [fn]
+    permission: fuckname.reload
+    permission-message: §c你没有权限执行此命令！
+
+permissions:
+  fuckname.reload:
+    description: Allows reloading the plugin configuration
+    default: op
+  fuckname.bypass:
+    description: Allows bypassing name checks
+    default: false
